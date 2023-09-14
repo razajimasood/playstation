@@ -1,0 +1,308 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ul,li{
+    list-style: none;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0  15px;
+
+}
+.container::after{
+    content: '';
+    clear: both;
+    display: table;
+    
+}
+.text-primary{
+    color: dodgerblue;
+}
+.text-white{
+    color: white;
+}
+.header{
+    width: 100%;
+    /* height: 50px; */
+    background-color: #333333e5;
+}
+.header-logo a{
+    color: white;
+    font-size: 25px;
+}
+.header-logo{
+    padding: 15px 0;
+    float: left;
+}
+.header-content{
+    text-align: center;
+    padding: 250px 0;
+}
+.header-content h1{
+    font-size: 50px;
+}
+.header-content p{
+    margin: 30px auto;
+}
+.header-content-link{
+    background-color: #333333e5;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 2px;
+}
+.header-content-link:hover{
+    color: dodgerblue;
+}
+.menu{
+    float: right;
+}
+.menu li a{
+    color: white;
+    padding: 20px 15px;
+    display: block;
+    transition: 0.5s;
+}
+.menu li{
+    float: left;
+}
+.menu li a:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+    color: dodgerblue;
+}
+.main{
+    width: 100%;
+}
+.hero{
+    width: 100%;
+    /* height: 500px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.377) , rgba(0, 0, 0, 0.397)),url(../images/cod_black_ops_3-wallpaper-1920x1080.jpg) no-repeat center top 30%;
+    background-size: cover;
+    
+     
+}
+.history{
+    width: 100%;
+    float: left;
+}
+.history .history-child{
+    width: 50%;
+    float: left;
+    text-align: center;
+
+}
+.history-image{
+    height: 400px;
+    background: url(../images/army.jpg) no-repeat center;
+    background-size: cover;
+}
+.history-content{
+    background-color: #333333e5;
+    color: white;
+    height: 400px;
+    padding: 70px;
+
+}
+.history-content h2{
+    font-size: 35px;
+}
+.history-content p{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 30px 0;
+  
+}
+.history-content a{
+    background-color: white;
+    color: #333333e5;
+    padding: 14px;
+    display: inline-block;
+    border-radius: 2px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.history-content a:hover{
+    background-color: dodgerblue;
+    color: white;
+
+}
+/* platform */
+platforms{
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+    
+}
+.platform-box{
+    width: 33.333%;
+    float: left;
+    padding: 40px;
+    text-align: center;
+    background-color:#333333e5;
+    color: #f5f5f5;
+}
+.platform-box h2{
+    margin: 20px 0;
+}
+.platform-box i{ 
+    font-size: 40px;
+}
+.platform-box:nth-child(2){
+    background-color: dodgerblue;
+    color:white;
+}
+.find-box{
+    width: 100%;
+    background-color:#333333e5;
+    min-height : 200px;
+    border-bottom: 1px solid white;
+    
+}
+/* .find-box .platform-box{
+    /* background-color: #333333e5; */
+ 
+/* footer */
+.footer{
+    width: 100%;
+    background-color: #333333e5;
+    float: left;
+    /* padding: 70px 0; */
+    text-align: center;
+    line-height: 100px;   
+    color:dodgerblue; 
+    border-top: 1px solid white;
+    
+}
+/* page about */
+.about-us-content-parent{
+    width: 100%;
+    background-color: rgb(208, 221, 221);
+}
+.content-about{
+    width: 100%;
+    padding: 40px 0;
+    float: left;
+}
+.about-us-content-left{
+    width: 50%;
+    float: left;
+}
+.about-us-content-right{
+    width: 50%;
+    float: left;
+}
+.about-us-content-right img{
+    width: 80%;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.about-us-content-left h1{
+    margin-bottom: 20px;
+}
+.about-us-content-left p{
+    margin-bottom: 20px;
+
+}
+.about-us-content-left p:last-child{
+    margin-bottom: 0;
+}
+.gamers{
+    background: url(../images/hero.jpg) no-repeat center top;
+    background-image: cover;
+    /* min-height: 400px; */
+    padding: 80px 0;
+
+}
+.gamers h2{
+    /* background-color: dodgerblue; */
+    text-align: center;
+    font-size: 40px;
+}
+.gamer-all .box img{
+    width: 120px;
+    border-radius: 50%;
+    float: left;
+    padding: 0 20px;
+}
+.gamer-all .box{
+    background-color:rgba(30, 143, 255, 0.671);
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+.gamer-all .box p{
+    padding: 30px 100px;
+    color: white;
+}
+
+/* page contact-us */
+.contact-us{
+    width: 100%;
+    /* background-color: gray; */
+}
+
+.contact-us h1{
+    font-size: 50px;
+    padding: 20px 0;
+}
+.contact-us-form{
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: orange; */
+
+}
+/* .form-group{
+    /* background-color: blue; */
+    
+.form-group label{
+    padding: 5px;
+    display: block;
+}
+.form-group input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    /* color: dodgerblue; */
+}
+.form-group textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+}
+.form-group input::placeholder{
+    color: dodgerblue;
+
+}
+.form-group .submit-form {
+    width: auto;
+    height: auto;
+    background-color: #333333e5;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+
+
+}
+.form-group input:focus{
+    outline: 1px solid dodgerblue;
+}
+.form-group .submit-form:focus{
+    outline: 1px solid dodgerblue;
+}
